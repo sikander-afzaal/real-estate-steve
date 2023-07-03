@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <title>Document</title>
+    <script src="index.js" defer></script>
   </head>
   <body class="bg-body bg-cover bg-no-repeat min-h-screen w-full bg-center">
     <div class="flex justify-start items-center w-full flex-col">
@@ -18,7 +19,7 @@
       <div
         class="flex pt-8 justify-between items-center w-[90%] max-w-[1400px]"
       >
-        <div class="flex justify-start items-end gap-10">
+        <div class="flex justify-start items-end gap-6">
           <div class="flex justify-start items-center flex-col gap-1">
             <img
               src="/assets/logo_top.png"
@@ -31,27 +32,141 @@
               alt=""
             />
           </div>
-          <a href="#" class="text-white uppercase text-xl font-normal"
+          <a
+            href="#"
+            class="text-white uppercase text-lg xl:text-xl font-normal hidden xl:block"
             >Coaching</a
           >
-          <a href="#" class="text-white uppercase text-xl font-normal"
+          <a
+            href="#"
+            class="text-white uppercase text-lg xl:text-xl font-normal hidden xl:block"
             >Become Licensed</a
           >
-          <a href="#" class="text-white uppercase text-xl font-normal"
+          <a
+            href="#"
+            class="text-white uppercase text-lg xl:text-xl font-normal hidden xl:block"
             >Speaking/Events</a
           >
-          <a href="#" class="text-white uppercase text-xl font-normal">About</a>
-          <a href="#" class="text-white uppercase text-xl font-normal"
+          <a
+            href="#"
+            class="text-white uppercase text-lg xl:text-xl font-normal hidden xl:block"
+            >About</a
+          >
+          <a
+            href="#"
+            class="text-white uppercase text-lg xl:text-xl font-normal hidden xl:block"
             >Contact</a
           >
         </div>
         <button
-          class="text-white border border-solid border-white rounded-xl w-[220px] h-[40px] bg-transparent text-lg"
+          class="text-white border border-solid border-white hidden xl:block rounded-xl w-[180px] xl:w-[220px] h-[40px] bg-transparent text-lg"
         >
           Free Assessment
         </button>
+        <button id="toggleHam" class="xl:hidden text-white z-10"><img src="/assets/open-ham.svg" alt="open menu" class="w-10 h-10" id="toggleHamSvg"></button>
+      </div>
+
+      <div id='hamMenu' class="transition-all translate-x-full xl:hidden fixed top-0 bg-black pl-4 bottom-0 w-[300px] right-0 flex flex-col gap-4">
+        <a
+            href="#"
+            class="text-white uppercase text-lg xl:text-xl font-normal mt-16"
+            >Coaching</a
+          >
+          <a
+            href="#"
+            class="text-white uppercase text-lg xl:text-xl font-normal"
+            >Become Licensed</a
+          >
+          <a
+            href="#"
+            class="text-white uppercase text-lg xl:text-xl font-normal"
+            >Speaking/Events</a
+          >
+          <a
+            href="#"
+            class="text-white uppercase text-lg xl:text-xl font-normal"
+            >About</a
+          >
+          <a
+            href="#"
+            class="text-white uppercase text-lg xl:text-xl font-normal"
+            >Contact</a
+          >
+          <button
+            class="text-white border border-solid border-white rounded-xl w-[180px] xl:w-[220px] h-[40px] bg-transparent text-lg"
+          >
+            Free Assessment
+          </button> 
+        </div>
       </div>
       <!-- header -------- -->
+
+      <div class="flex justify-center w-full mt-8 xl:mt-0">
+        <div
+          class="flex flex-col xl:flex-row items-end w-[90%] max-w-[1300px] gap-8"
+        >
+          <div class="flex flex-col">
+            <img
+              src="/assets/text-hero.png"
+              alt="steve burris"
+              class="max-w-[350px] xl:max-w-none w-[80%] xl:w-[70%]"
+            />
+
+            <h1 class="flex flex-col gap-2">
+              <span
+                class="text-white text-4xl sm:text-5xl md:text-6xl font-extrabold"
+                >The Top Choice for</span
+              >
+              <span
+                class="text-white text-2xl sm:text-3xl md:text-4xl font-extrabold"
+                >Scaling Real Estate Businesses</span
+              >
+            </h1>
+
+            <p class="text-white text-base md:text-lg mt-6">
+              Discover why Steve Burris is widely regarded as one of the top
+              real estate coaches in the United States. With a remarkable track
+              record as a successful agent and a visionary entrepreneur, Steve
+              has garnered accolades and achieved exceptional results throughout
+              his career. Leading a powerhouse team of 129 agents at Kevo
+              Properties, Steve closed an astounding $486,955,669 in sales on
+              2,584 units in 2022*. His expertise and dedication have propelled
+              him to the forefront of the industry, earning him the reputation
+              as a go-to coach for agents aspiring to thrive financially while
+              maintaining a high quality of life. Steve's unique coaching
+              approach, combined with his extensive experience and profound
+              understanding of the market, has enabled him to create more
+              millionaire agents than any other coach or trainer. Join Steve
+              Burris's exclusive coaching program today and unlock your true
+              potential in the real estate industry.
+            </p>
+            <p class="text-white text-[10px] mt-3">
+              *Based on data from MLS OK and MLS Technology
+              01/01/2022-12/31/2022
+            </p>
+            <button
+              class="uppercase bg-white w-[200px] text-lg py-4 rounded-3xl self-center mt-4 xl:mt-1 xl:mb-8"
+            >
+              Get Started
+            </button>
+          </div>
+          <div class="w-full xl:min-w-[400px] flex justify-center items-end">
+            <img
+              src="/assets/hero.png"
+              alt="man smiling"
+              class="max-h-[400px] xl:max-h-none"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center bg-black w-full p-8 text-white">
+        <h2
+          class="uppercase text-2xl md:text-3xl lg:text-4xl font-extrabold text-center"
+        >
+          Over 200,000 homes sold and $1 billion dollar in sales
+        </h2>
+      </div>
     </div>
   </body>
 </html>
